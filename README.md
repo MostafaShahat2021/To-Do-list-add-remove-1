@@ -1,20 +1,45 @@
-# To Do list: Add & Remove
+<!-- TABLE OF CONTENTS -->
+# 📗 Table of Contents
+
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  - [Deployment](#triangular_flag_on_post-deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [❓ FAQ (OPTIONAL)](#faq)
+- [📝 License](#license)
+
+<!-- PROJECT DESCRIPTION -->
+
+# 📖 [To Do list: add & remove] <a name="about-project"></a>
 
 a simple HTML list of To Do tasks,
 built using webpack and served by a webpack dev server.
 
-![](https://img.shields.io/badge/Microverse-blueviolet)
-
-## Built With
-
+## 🛠 Built With <a name="built-with"></a>
 - HTML(HTML-5).
 - CSS(Flexbox).
 - javaScript (ES6).
-- webpack.
+- ★ webpack.
 - Github flow.
 - Linters.
 
-### In this project :
+<!-- Features -->
+
+### Key Features <a name="key-features"></a>
+### In this project we :
+
 - Add function for adding a new task.
 - Add function for deleting a task.
 - Add function for editing task descriptions.
@@ -33,8 +58,21 @@ built using webpack and served by a webpack dev server.
 - Add Mark up to the .html file.
 - Add style to the web site.
 
-## Getting Started
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link]()
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- GETTING STARTED -->
+
+## 💻 Getting Started <a name="getting-started"></a>
+
+To get a local copy up and running, follow these steps.
 1- clone Repo.
 git clone git@github.com:MostafaShahat2021/portfolio.git
 
@@ -50,27 +88,62 @@ git clone git@github.com:MostafaShahat2021/portfolio.git
 - npm i -g
 - sudo apt install -g npm
 
-### Run tests
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-We use Linters for HTML/CSS to cheack this project.
+<!-- AUTHORS -->
 
-## Authors
+## 👥 Authors <a name="authors"></a>
 
-👤 **Mostafa Shahat**
+👤 **Author**
 
 - GitHub: [@MostafaShahat2021](https://github.com/MostafaShahat2021)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mostafa-shahat-a75810208/)
 
-## 🤝 Contributing
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+<!-- - [ ] **[Reordering a selected item (as drag-and-drop)]** -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
 
 Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Show your support
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
 
 Give a ⭐️ if you like this project!
 
-## 📝 License
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank all Microverse community.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
+
+_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
