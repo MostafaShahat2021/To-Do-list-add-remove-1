@@ -105,7 +105,8 @@ git clone git@github.com:MostafaShahat2021/portfolio.git
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-<!-- - [ ] **[Reordering a selected item (as drag-and-drop)]** -->
+- [ ] **Reordering a selected item (as drag-and-drop)**
+- [ ] **Add Clear all items function**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
