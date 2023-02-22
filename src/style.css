@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: whitesmoke;
+  width: 50%;
+  margin: 2rem auto;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  padding: 1rem;
+}
+
+.head {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  font-size: x-small;
+}
+
+button {
+  background: whitesmoke;
+  border: none;
+}
+
+.head span {
+  font-size: medium;
+  background-color: whitesmoke;
+}
+
+.add-task {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin: 1rem;
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+}
+
+.clear {
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+}
+
+.clear a {
+  color: darkgray;
+  text-decoration: none;
+  font-size: large;
+}
+
+#task {
+  width: 90%;
+  padding: 0.7rem;
+  font-size: large;
+  font-style: italic;
+}
+
+.task {
+  box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 2px 6px 2px rgb(60 64 67 / 15%);
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  padding: 0.5rem;
+}
+
+.del:hover {
+  cursor: pointer;
+}
+
+.text {
+  width: 80%;
+  padding: 0.3rem;
+  font-size: large;
+}
+
+.checkbox {
+  margin-right: 1rem;
+}
