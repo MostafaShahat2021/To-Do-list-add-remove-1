@@ -43,6 +43,8 @@ built using webpack and served by a webpack dev server.
 - Add function for adding a new task.
 - Add function for deleting a task.
 - Add function for editing task descriptions.
+- Add function for Update items object's value for completed key upon user actions.
+- Add function for clear all button
 - Use webpack to bundle JavaScript.
 - Use NPM.
 - Use webpack.
