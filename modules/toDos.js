@@ -1,29 +1,28 @@
+/* eslint-disable import/no-mutable-exports */
 const submit = document.querySelector('.add-btn');
 const tasksDiv = document.querySelector('.tasks');
-const taskInput = document.querySelector('.add-task input');
+export const taskInput = document.querySelector('.add-task input');
 
 let editId;
 let isEditTask = false;
 let tasks = JSON.parse(localStorage.getItem('task-list'));
 
-// Edit Function
-window.editTask = (taskId, taskDescripton) => {
-  editId = taskId - 1;
-  isEditTask = true;
-  taskInput.value = taskDescripton;
-};
-
-// Render Function
-const addElemToPage = () => {
+export const addElemToPage = () => {
   let div = '';
   if (tasks) {
     tasks.forEach((task) => {
+      let isCompleted;
+      if (task.completed === true) {
+        isCompleted = 'checked';
+      } else {
+        isCompleted = '';
+      }
       div += `
-      <div class='task' data-id='task.id'>
-        <input id="${task.index}" class='checkbox' onclick='updateCompleted(this)' type="checkbox">
-        <p id='${task.index}'class='text' contenteditable="false">${task.descripton}</p>
+      <div class='task' data-id='task.id'>        
+        <input id="${task.index}" class='checkbox' type="checkbox" onclick='updateStatus(this)'>
+        <p id='${task.index}'class='text ${isCompleted}' contenteditable="false">${task.descripton}</p>
         <button type="button"  id="${task.index}" class='edit' >
-        <span onclick='editTask(${task.index}, "${task.descripton}")' class="material-symbols-outlined">edit</span>
+        <span onclick='editTask(${task.index - 1}, "${task.descripton}")' class="material-symbols-outlined">edit</span>
         </button>
         <button type="button"  id="${task.index}" class='del' onclick='del(${task.index})' >
         <span class='material-symbols-outlined del'>delete</span>
@@ -36,6 +35,7 @@ const addElemToPage = () => {
 };
 addElemToPage();
 
+// ====== Add Task Function =======
 submit.addEventListener('click', () => {
   const userTask = taskInput.value;
   if (!isEditTask) {
@@ -53,10 +53,12 @@ submit.addEventListener('click', () => {
     tasks[editId].descripton = userTask;
   }
   taskInput.value = '';
+  taskInput.focus();
   localStorage.setItem('task-list', JSON.stringify(tasks));
   addElemToPage();
 });
 
+// ====== Add Task Function with Enter Key =======
 taskInput.addEventListener('keyup', (e) => {
   const userTask = taskInput.value;
   if (e.key === 'Enter' && userTask) {
@@ -80,7 +82,15 @@ taskInput.addEventListener('keyup', (e) => {
   }
 });
 
-// Delete Function
+// ======Edit Function=======
+window.editTask = (taskId, taskDescripton) => {
+  editId = taskId;
+  isEditTask = true;
+  taskInput.value = taskDescripton;
+  taskInput.focus();
+};
+
+// ======Delete Function=======
 window.del = (id) => {
   tasks = tasks.filter((task) => task.index !== id);
   tasks.forEach((e, i) => {
@@ -89,3 +99,5 @@ window.del = (id) => {
   localStorage.setItem('task-list', JSON.stringify(tasks));
   addElemToPage();
 };
+
+export { tasks };

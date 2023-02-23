@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #61acb8;
+}
+
 main {
   background-color: whitesmoke;
   width: 50%;
@@ -48,7 +52,7 @@ button {
 }
 
 .clear a {
-  color: darkgray;
+  color: rgb(129, 127, 127);
   text-decoration: none;
   font-size: large;
 }
@@ -73,6 +77,7 @@ button {
 }
 
 .text {
+  /* border: 1px solid red; */
   width: 80%;
   padding: 0.3rem;
   font-size: large;
@@ -80,4 +85,8 @@ button {
 
 .checkbox {
   margin-right: 1rem;
+}
+
+.checked {
+  text-decoration: line-through;
 }
