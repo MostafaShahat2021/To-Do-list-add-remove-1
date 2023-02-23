@@ -7,7 +7,7 @@ let editId;
 let isEditTask = false;
 let tasks = JSON.parse(localStorage.getItem('task-list'));
 
-const addElemToPage = () => {
+export const addElemToPage = () => {
   let div = '';
   if (tasks) {
     tasks.forEach((task) => {

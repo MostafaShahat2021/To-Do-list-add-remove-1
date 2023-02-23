@@ -1,4 +1,4 @@
-import { tasks } from './toDos.js';
+import { tasks, addElemToPage } from './toDos.js';
 
 // ======Checked Function=======
 window.updateStatus = (selectedTask) => {
@@ -17,10 +17,14 @@ window.updateStatus = (selectedTask) => {
   localStorage.setItem('task-list', JSON.stringify(tasks));
 };
 
-// ======Clear All Function=======
-const clearBtn = document.querySelector('.clear');
-// console.log(clearBtn);
-clearBtn.addEventListener('click', () => {
-  localStorage.clear();
-  window.location.reload();
+// ======Clear Completed Function=======
+const clearCompletedBtn = document.querySelector('.clear');
+
+clearCompletedBtn.addEventListener('click', () => {
+  tasks = tasks.filter((task) => !task.completed);
+  tasks.forEach((e, i) => {
+    e.index = i + 1;
+  });
+  localStorage.setItem('task-list', JSON.stringify(tasks));
+  addElemToPage();
 });
